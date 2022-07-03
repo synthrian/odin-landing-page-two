@@ -33,7 +33,7 @@ body {
     display: flex;
     flex-direction: row;
 }
-.navlink {
+.navlink-block .hero-secondary {
     margin-left: 25px;
 }
 .header-logo {
@@ -44,7 +44,6 @@ body {
     font-weight: bold;
 }
 .s1-text {
-    flex:1;
     margin-right: 20px;
 }
 .hero-main {
@@ -58,13 +57,74 @@ body {
     color: #e5e7eb;
 }
 .s1-image {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #828283;
+    flex-shrink: 0;
     color: #f9faf8;
     margin-left: 20px;
+    overflow: hidden;
+    width: 450px;
+    height: 225px;
+}
+.s1-image img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: 0px 20px;
+}
+.signup {
+    background-color: #3882f6;
+    color: #F9FaF8;
+    padding: 5px 25px;
+    border: 2px solid;
+    border-color: #f9faf8;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.s1-text .signup {
+    border: none;
+}
+.s2 {
+    display: flex;
+    justify-content: center;
+}
+.s2-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s2-header {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 700;
+}
+.s2-bottom {
+    display: flex;
+    justify-content: center;
+}
+.s2-block {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 150px;
+    margin: 0px 25px 50px 25px;
+}
+.s2-image {
+    border: 3px solid #3882f6;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+.s2-image img {
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 0px 0px;
+}
+.s2-block-text {
+    color: #828283;
+    text-align: center;
 }
 .s3 {
     background-color: #E4E7Eb;
@@ -84,6 +144,7 @@ body {
     font-style: italic;
     font-weight: 300;
     text-align: justify;
+    margin-bottom: 0;
 }
 .quote-sig{
     color: #1f2937;
@@ -97,9 +158,25 @@ body {
     align-items: center;
 }
 .s4-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     background-color: #3882f6;
-    width: 50%;
-    margin: 25px 0px;
+    width: 60%;
+    margin: 75px 0px;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.s4-header {
+    margin: 0;
+    color: #F9FaF8;
+    font-weight: bold;
+}
+.s4-text .hero-secondary {
+    margin: 0;
+    color: #e5e7eb;
+    font-size: 14px;
 }
 .footer {
     background-color: #1f2937;
